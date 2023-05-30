@@ -1,6 +1,12 @@
 import { PropTypes } from 'prop-types';
 import css from './Statistics.module.css';
-
+function genCellColor() {
+  return {
+    background: `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`,
+  };
+}
 export const Statistics = ({ title, stats }) => {
   //
   return (
@@ -10,7 +16,7 @@ export const Statistics = ({ title, stats }) => {
       <ul className={css.statList}>
         {stats.map(data => {
           return (
-            <li key={data.id} className={css.item}>
+            <li key={data.id} className={css.item} style={genCellColor()}>
               <span className={css.label}>{data.label}</span>
               <span className={css.percentage}>{data.percentage}%</span>
             </li>
