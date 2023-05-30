@@ -6,15 +6,24 @@
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .transactionHistory th {
-  background-color: #f2f2f2;
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
+  color: #fff;
+  background-color: #00bcd5;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
 }
 .transactionHistory td {
   border: 1px solid #ccc;
   padding: 5px;
   text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+.transactionHistory td:first-child {
+  text-transform: capitalize;
 }
 .transactionHistory tbody tr:nth-child(odd) {
   background: #fff;
