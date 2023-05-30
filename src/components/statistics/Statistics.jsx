@@ -4,7 +4,8 @@ function genCellColor() {
   return {
     background: `#${Math.floor(Math.random() * 16777215)
       .toString(16)
-      .padStart(6, 0)}`,
+      .padStart(6, 0)
+      .concat('75')}`,
   };
 }
 export const Statistics = ({ title, stats }) => {
