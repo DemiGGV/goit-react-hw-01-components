@@ -20,7 +20,6 @@
   padding: 5px;
   text-align: center;
   font-size: 0.9em;
-  color: #555;
 }
 .transactionHistory td:first-child {
   text-transform: capitalize;
@@ -30,4 +29,16 @@
 }
 .transactionHistory tbody tr:nth-child(even) {
   background: #f3f6f9;
+}
+.deposit {
+  color: #0400ff;
+}
+.withdrawal {
+  color: #2ab942;
+}
+.payment {
+  color: #d42d2d;
+}
+.invoice {
+  color: #65e2e2;
 }
